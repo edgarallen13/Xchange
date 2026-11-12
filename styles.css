@@ -246,16 +246,39 @@ h6 {
 .logo {
   display: inline-flex;
   align-items: center;
-  font-size: 1.75rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
   text-decoration: none;
   user-select: none;
-  transition: transform var(--transition-fast);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
 
 .logo:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
+.logo-img {
+  height: 52px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.footer-logo-img {
+  height: 48px;
+  max-width: 135px;
+}
+
+.modal-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.modal-logo-img {
+  height: 56px;
+  max-width: 150px;
 }
 
 .logo-x {
@@ -1642,6 +1665,11 @@ h6 {
 @media (max-width: 768px) {
   :root {
     --nav-height: 68px;
+  }
+
+  .logo-img {
+    height: 42px;
+    max-width: 120px;
   }
 
   .section-title {
