@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Xchange - A trusted, reliable, and secure online platform connecting consumers and sellers for verified, authentic, and accurate product listings.">
+  <title>Xchange | Trustworthy, Reliable & Secure Marketplace</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="top-navbar">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="logo" aria-label="Xchange Home">
+        <span class="logo-x">X</span><span class="logo-change">change</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="nav-menu" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#why-xchange" class="nav-link">Why Xchange</a>
+        <a href="#protection" class="nav-link">Protection</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav CTA & Mobile Hamburger -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-primary btn-nav-cta btn-register">Register Now</button>
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Backdrop -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <!-- Hero Content (Left) -->
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pill-badge">Official Venture</span>
+            <span class="pill-text">Authentic Student & Community Marketplace</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Tired of Inaccurate Listings and Fake Products? <span class="text-gradient">We Got You.</span>
+          </h1>
+          
+          <p class="hero-subheadline">
+            Xchange is an online platform connecting consumers and sellers to buy and sell products that are trusted, authentic, and accurate.
+          </p>
+
+          <div class="hero-cta-group">
+            <button type="button" class="btn btn-primary btn-lg btn-register">
+              <span>Register Now</span>
+              <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <a href="#protection" class="btn btn-outline btn-lg">
+              <span>Learn How We Protect You</span>
+            </a>
+          </div>
+
+          <!-- Micro Trust Stats -->
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              <span>100% Authenticity Verified</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              <span>Zero-Tolerance Misleading Policy</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Protected Escrow Transfers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Mockup (Right) -->
+        <div class="hero-visual">
+          <div class="visual-card">
+            <!-- Simulated Verified Product Showcase -->
+            <div class="visual-card-header">
+              <div class="badge-status-verified">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+                <span>Verified Authentic</span>
+              </div>
+              <span class="seller-score">Seller Accuracy: <strong>100%</strong></span>
+            </div>
+
+            <div class="product-preview">
+              <div class="preview-image-placeholder">
+                <div class="preview-glow"></div>
+                <div class="preview-tag">Inspected & Documented</div>
+                <div class="product-icon-wrap">
+                  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="product-details">
+                <div class="product-meta">
+                  <h4 class="product-name">Tech & Gadget Pro Edition</h4>
+                  <span class="product-price">₱14,500</span>
+                </div>
+                <p class="product-desc-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Condition matches 100% with provided high-res photos & specs</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Verification Checklist inside card -->
+            <div class="verification-mini-list">
+              <div class="mini-check">
+                <span class="check-dot"></span>
+                <span>Original Serial Authenticated</span>
+              </div>
+              <div class="mini-check">
+                <span class="check-dot"></span>
+                <span>Seller ID KYC Completed</span>
+              </div>
+              <div class="mini-check">
+                <span class="check-dot"></span>
+                <span>Escrow Hold Protected</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge Elements -->
+            <div class="floating-badge floating-badge-top">
+              <div class="badge-icon shield-bg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="badge-text">
+                <strong>Anti-Fraud Protocol</strong>
+                <span>Safe Delivery Guaranteed</span>
+              </div>
+            </div>
+
+            <div class="floating-badge floating-badge-bottom">
+              <div class="badge-icon star-bg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="badge-text">
+                <strong>Honest Marketplace</strong>
+                <span>No Hidden Flaws</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CORE VALUES SECTION ==================== -->
+    <section class="values-section" id="why-xchange">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">WHY XCHANGE</span>
+          <h2 class="section-title">Trustworthy, Reliable, and Secure</h2>
+          <p class="section-subtitle">
+            Engineered to eliminate buyer anxiety and bring accountability back to online peer-to-peer commerce.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <!-- Card 1: Trustworthy -->
+          <div class="value-card">
+            <div class="value-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <span class="value-number">01</span>
+            <h3 class="value-title">Trustworthy</h3>
+            <p class="value-description">
+              Verified authentic products so consumers never have to guess if an item is real. Every seller undergoes thorough identity confirmation, and premium items are cross-checked before exchange.
+            </p>
+            <ul class="value-perks">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Proof of authenticity mandatory</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Verified seller profile badges</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Reliable -->
+          <div class="value-card highlight-card">
+            <div class="value-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <span class="value-number">02</span>
+            <h3 class="value-title">Reliable</h3>
+            <p class="value-description">
+              Unlike other marketplaces with unreliable information, Xchange strictly requires sellers to follow their product descriptions accurately. No misleading photos, deceptive specs, or undisclosed defects.
+            </p>
+            <ul class="value-perks">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Mandatory condition grading rules</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Item-to-listing accuracy guarantee</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Secure -->
+          <div class="value-card">
+            <div class="value-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <span class="value-number">03</span>
+            <h3 class="value-title">Secure</h3>
+            <p class="value-description">
+              Protected, safe transactions from checkout to delivery. Payment is held in secure escrow and only released once the buyer inspects and confirms the product matches its description.
+            </p>
+            <ul class="value-perks">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Buyer escrow hold system</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Hassle-free dispute resolution</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== THREAT PROTECTION SECTION ==================== -->
+    <section class="protection-section" id="protection">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">MARKETPLACE COMPARISON</span>
+          <h2 class="section-title">How Xchange Protects Your Transaction</h2>
+          <p class="section-subtitle">
+            See the difference between unregulated classified sites and the protected Xchange ecosystem.
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <!-- Column 1: Common Threats (Other Marketplaces) -->
+          <div class="comparison-col threats-col">
+            <div class="comparison-header">
+              <div class="threat-icon-badge">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="15" y1="9" x2="9" y2="15"></line>
+                  <line x1="9" y1="9" x2="15" y2="15"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="col-title">Common Marketplace Threats</h3>
+                <p class="col-subtitle">What buyers face on unmoderated platforms</p>
+              </div>
+            </div>
+
+            <div class="threat-items">
+              <div class="threat-item">
+                <div class="threat-badge">Risk</div>
+                <div class="threat-text">
+                  <h4>Counterfeit & Clone Goods</h4>
+                  <p>Unvetted sellers listing fake designer goods, cloned electronics, and replica parts disguised as original merchandise.</p>
+                </div>
+              </div>
+
+              <div class="threat-item">
+                <div class="threat-badge">Risk</div>
+                <div class="threat-text">
+                  <h4>Misleading Descriptions & Hidden Flaws</h4>
+                  <p>Stock photos hiding deep scratches, broken components, or missing accessories with zero seller accountability.</p>
+                </div>
+              </div>
+
+              <div class="threat-item">
+                <div class="threat-badge">Risk</div>
+                <div class="threat-text">
+                  <h4>Unsafe Payments & Vanishing Sellers</h4>
+                  <p>Risky upfront money transfers where dishonest sellers block your account and disappear the minute cash is sent.</p>
+                </div>
+              </div>
+
+              <div class="threat-item">
+                <div class="threat-badge">Risk</div>
+                <div class="threat-text">
+                  <h4>Zero Recourse or Return Support</h4>
+                  <p>No customer protection service or dispute mediator, leaving you stuck with damaged items and empty pockets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Xchange Protection Standard -->
+          <div class="comparison-col solution-col">
+            <div class="comparison-header">
+              <div class="solution-icon-badge">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="col-title">The Xchange Safeguard</h3>
+                <p class="col-subtitle">Our comprehensive multi-layer protection</p>
+              </div>
+            </div>
+
+            <div class="solution-items">
+              <div class="solution-item">
+                <div class="solution-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="solution-text">
+                  <h4>Mandatory Seller Identity & Verification</h4>
+                  <p>Sellers must complete ID verification before posting. High-value products require item verification certificates.</p>
+                </div>
+              </div>
+
+              <div class="solution-item">
+                <div class="solution-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="solution-text">
+                  <h4>Strict Description Compliance Rules</h4>
+                  <p>Sellers must follow structured condition guidelines. Any discrepancy triggers our automatic buyer protection refund policy.</p>
+                </div>
+              </div>
+
+              <div class="solution-item">
+                <div class="solution-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="solution-text">
+                  <h4>Escrow-Guaranteed Transactions</h4>
+                  <p>Your payment remains safely in escrow until you personally inspect and confirm the product is exactly as described.</p>
+                </div>
+              </div>
+
+              <div class="solution-item">
+                <div class="solution-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="solution-text">
+                  <h4>Direct Dispute Mediation & Accountability</h4>
+                  <p>Dedicated student venture support and swift conflict resolution. Fraudulent sellers are permanently banned.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CALL TO ACTION BANNER ==================== -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-box">
+          <div class="cta-banner-content">
+            <h2 class="cta-title">Ready to shop with confidence? Join Xchange today.</h2>
+            <p class="cta-desc">
+              Experience the school marketplace where authenticity is verified, descriptions are reliable, and your money is always safe.
+            </p>
+          </div>
+          <div class="cta-banner-action">
+            <button type="button" class="btn btn-primary btn-banner btn-register">
+              <span>Register Now</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand & Mission Column -->
+        <div class="footer-col footer-brand-col">
+          <a href="#home" class="logo footer-logo">
+            <span class="logo-x">X</span><span class="logo-change">change</span>
+          </a>
+          <p class="footer-desc">
+            A student-led venture dedicated to making peer-to-peer commerce safe, authentic, and genuinely reliable for students and the community.
+          </p>
+          <div class="footer-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>School Venture Initiative • Ma'am Jeany's Class</span>
+          </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#why-xchange">Why Xchange</a></li>
+            <li><a href="#protection">Protection Standard</a></li>
+            <li><a href="#register" class="btn-register">Register Account</a></li>
+          </ul>
+        </div>
+
+        <!-- Platform Pillars Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Promises</h4>
+          <ul class="footer-links">
+            <li><span>✓ 100% Authentic Listings</span></li>
+            <li><span>✓ Verified Seller ID</span></li>
+            <li><span>✓ Accurate Descriptions</span></li>
+            <li><span>✓ Safe Escrow Checkout</span></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Us</h4>
+          <p class="footer-contact-text">
+            Have questions, feedback, or need assistance? Reach out directly to our student venture team:
+          </p>
+          <a href="mailto:nikkonikkonikkoni@gmail.com" class="footer-email-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <span>nikkonikkonikkoni@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Xchange Project. All rights reserved. Created with integrity for safe campus commerce.</p>
+        <div class="footer-bottom-links">
+          <a href="#protection">Buyer Protection Policy</a>
+          <span class="sep">•</span>
+          <a href="#why-xchange">Seller Verification Rules</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== REGISTRATION MODAL ==================== -->
+  <div class="modal-overlay" id="register-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <!-- Close Button -->
+      <button type="button" class="modal-close" id="modal-close-btn" aria-label="Close Registration Dialog">
+        &times;
+      </button>
+
+      <!-- Modal State 1: Registration Form -->
+      <div class="modal-form-view" id="modal-form-view">
+        <div class="modal-header">
+          <div class="modal-logo">
+            <span class="logo-x">X</span><span class="logo-change">change</span>
+          </div>
+          <h3 class="modal-title" id="modal-title">Join Xchange Today</h3>
+          <p class="modal-subtitle">Register to buy or sell authentic, verified products with full transaction protection.</p>
+        </div>
+
+        <form id="registration-form" class="registration-form" novalidate>
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="reg-name" class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" id="reg-name" name="name" class="form-control" placeholder="e.g. Maria Santos" required autocomplete="name">
+            <span class="form-error" id="name-error">Please enter your full name.</span>
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="reg-email" class="form-label">Email Address <span class="required">*</span></label>
+            <input type="email" id="reg-email" name="email" class="form-control" placeholder="e.g. maria@school.edu" required autocomplete="email">
+            <span class="form-error" id="email-error">Please enter a valid email address.</span>
+          </div>
+
+          <!-- Role Selector -->
+          <div class="form-group">
+            <label class="form-label">I want to join as: <span class="required">*</span></label>
+            <div class="role-selector-grid">
+              <label class="role-option active" for="role-buyer">
+                <input type="radio" id="role-buyer" name="userRole" value="Buyer" checked>
+                <div class="role-card-content">
+                  <div class="role-header">
+                    <span class="role-title">Buyer</span>
+                    <span class="role-radio-dot"></span>
+                  </div>
+                  <span class="role-desc">Browse & purchase authentic items safely with escrow protection.</span>
+                </div>
+              </label>
+
+              <label class="role-option" for="role-seller">
+                <input type="radio" id="role-seller" name="userRole" value="Seller">
+                <div class="role-card-content">
+                  <div class="role-header">
+                    <span class="role-title">Seller</span>
+                    <span class="role-radio-dot"></span>
+                  </div>
+                  <span class="role-desc">List accurate items and reach trustworthy buyers who value authenticity.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Terms Checkbox -->
+          <div class="form-group form-check">
+            <label class="checkbox-label" for="reg-terms">
+              <input type="checkbox" id="reg-terms" name="terms" required checked>
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">
+                I agree to the Xchange <a href="#protection" class="link-inline">Authenticity & Accurate Listing Guidelines</a>.
+              </span>
+            </label>
+            <span class="form-error" id="terms-error">You must agree to the guidelines to continue.</span>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-block btn-submit" id="submit-btn">
+            <span class="btn-text">Create Account</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Modal State 2: Confirmation Message -->
+      <div class="modal-success-view" id="modal-success-view" style="display: none;">
+        <div class="success-icon-wrap">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </div>
+        <h3 class="success-title">Account Created Successfully!</h3>
+        <p class="success-message">
+          Welcome to Xchange, <strong id="success-user-name">Friend</strong>! Your registration as a <strong id="success-user-role">Buyer</strong> has been confirmed.
+        </p>
+        <div class="success-details-box">
+          <p>We've sent a verification link and onboarding guide to:</p>
+          <p class="success-user-email" id="success-user-email">user@example.com</p>
+        </div>
+        <p class="success-note">
+          You are now ready to experience a marketplace with verified authenticity and 100% accurate listings.
+        </p>
+        <button type="button" class="btn btn-primary btn-block" id="modal-done-btn">
+          Start Exploring Xchange
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
+
