@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Xchange Marketplace - Buy and sell authentic, admin-verified products with zero inaccurate listings and full escrow protection.">
+  <title>Xchange Marketplace | Verified, Authentic & Accurate Products</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Theme & Shop Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body class="shop-page">
+
+  <!-- ==================== SHOP NAVBAR ==================== -->
+  <header class="shop-navbar" id="shop-navbar">
+    <div class="shop-nav-container">
+      
+      <!-- Brand Logo linking back to landing page -->
+      <a href="index.html" class="logo shop-logo" aria-label="Xchange Home">
+        <img src="logo.png" alt="Xchange - Reliable, Trustworthy, Safe" class="logo-img" onerror="this.style.display='none'; document.getElementById('logo-text-fallback').style.display='inline-flex';">
+        <span id="logo-text-fallback" class="logo-text-fallback" style="display:none;"><span class="logo-x">X</span><span class="logo-change">change</span></span>
+      </a>
+
+      <!-- Functional Real-Time Search Bar -->
+      <div class="shop-search-wrapper" role="search">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input 
+          type="search" 
+          id="search-input" 
+          class="shop-search-input" 
+          placeholder="Search verified products, categories, or sellers..." 
+          aria-label="Search verified products" 
+          autocomplete="off"
+        >
+        <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear search" title="Clear search" style="display: none;">
+          &times;
+        </button>
+      </div>
+
+      <!-- Nav Actions (Home Link + Cart Button) -->
+      <div class="shop-nav-actions">
+        <a href="index.html" class="shop-back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Home</span>
+        </a>
+
+        <!-- Interactive Cart Button with Live Counter Badge -->
+        <button type="button" id="cart-btn" class="btn-cart-toggle" aria-label="View shopping cart" aria-haspopup="dialog">
+          <svg class="cart-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-label">Cart</span>
+          <span id="cart-count-badge" class="cart-badge" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== TRUST SUB-BANNER ==================== -->
+  <div class="trust-sub-banner" role="status">
+    <div class="trust-sub-container">
+      <div class="trust-sub-content">
+        <svg class="trust-sub-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <polyline points="9 12 11 14 15 10"></polyline>
+        </svg>
+        <span class="trust-sub-text">
+          <strong>Official Guarantee:</strong> Every listing on Xchange undergoes mandatory Admin Specification & Authenticity Checks before going live.
+        </span>
+      </div>
+      <a href="index.html#protection" class="trust-sub-link">
+        <span>How it works</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN MARKETPLACE CONTENT ==================== -->
+  <main class="shop-main">
+    <div class="container shop-container">
+
+      <!-- Header & Subtitle -->
+      <section class="marketplace-intro">
+        <div class="intro-badge">
+          <span class="badge-dot"></span>
+          <span>Verified Student & Campus Inventory</span>
+        </div>
+        <h1 class="marketplace-title">Explore Verified Products</h1>
+        <p class="marketplace-subtitle">
+          Shop with zero doubts. Unlike standard classifieds, every item below has verified physical specifications, serial numbers, and photos inspected by Xchange admins.
+        </p>
+      </section>
+
+      <!-- Category Filter Pills -->
+      <section class="category-filters-section" aria-label="Product Categories">
+        <div class="category-pills-wrapper" role="tablist">
+          <button type="button" class="category-pill active" data-category="all" role="tab" aria-selected="true">
+            <span>All Products</span>
+            <span class="pill-count" id="count-all">8</span>
+          </button>
+          <button type="button" class="category-pill" data-category="Electronics" role="tab" aria-selected="false">
+            <span>Electronics</span>
+            <span class="pill-count" id="count-electronics">3</span>
+          </button>
+          <button type="button" class="category-pill" data-category="Footwear & Apparel" role="tab" aria-selected="false">
+            <span>Footwear & Apparel</span>
+            <span class="pill-count" id="count-footwear">1</span>
+          </button>
+          <button type="button" class="category-pill" data-category="Bags & Accessories" role="tab" aria-selected="false">
+            <span>Bags & Accessories</span>
+            <span class="pill-count" id="count-bags">2</span>
+          </button>
+          <button type="button" class="category-pill" data-category="Watches & Gear" role="tab" aria-selected="false">
+            <span>Watches & Gear</span>
+            <span class="pill-count" id="count-watches">2</span>
+          </button>
+        </div>
+
+        <!-- Filter Status Bar -->
+        <div class="filter-status-bar">
+          <span id="results-count-text" class="results-count-text">Showing all 8 verified products</span>
+          <div class="escrow-guarantee-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+            <span>Escrow Protected Checkout</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products Grid (Populated dynamically via shop.js) -->
+      <section class="products-grid-section">
+        <div class="products-grid" id="products-grid" aria-live="polite">
+          <!-- Dynamically populated product cards -->
+        </div>
+
+        <!-- Empty Search Results State -->
+        <div class="empty-results-state" id="empty-results" style="display: none;">
+          <div class="empty-icon-wrap">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+          </div>
+          <h3 class="empty-title">No verified products found</h3>
+          <p class="empty-desc">We couldn't find any items matching your search or category filter. Try checking for typos or searching a different term.</p>
+          <button type="button" class="btn btn-outline" id="reset-filters-btn">Reset All Filters</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== SLIDE-OVER CART DRAWER ==================== -->
+  <div class="cart-drawer-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+  
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <h2 class="cart-drawer-title" id="cart-drawer-title">Shopping Cart</h2>
+        <span class="cart-drawer-count" id="cart-drawer-items-count">(0 items)</span>
+      </div>
+      <button type="button" class="cart-drawer-close" id="cart-close-btn" aria-label="Close cart drawer">
+        &times;
+      </button>
+    </div>
+
+    <!-- Escrow Protection Badge inside cart -->
+    <div class="cart-escrow-badge">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.5">
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+      </svg>
+      <span>Your payment will be held safely in escrow until you inspect your item.</span>
+    </div>
+
+    <!-- Items List Container -->
+    <div class="cart-items-container" id="cart-items-container">
+      <!-- Dynamically filled with cart items or empty state -->
+    </div>
+
+    <!-- Empty Cart View -->
+    <div class="cart-empty-view" id="cart-empty-view" style="display: none;">
+      <div class="empty-cart-icon">
+        <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+      </div>
+      <h3 class="cart-empty-title">Your Xchange cart is empty</h3>
+      <p class="cart-empty-desc">Explore our verified products and shop with total peace of mind.</p>
+      <button type="button" class="btn btn-outline" id="cart-shop-now-btn">Start Shopping</button>
+    </div>
+
+    <!-- Cart Footer & Price Breakdown -->
+    <div class="cart-drawer-footer" id="cart-drawer-footer">
+      <div class="cart-summary-breakdown">
+        <div class="summary-line">
+          <span class="summary-label">Subtotal</span>
+          <span class="summary-value" id="cart-subtotal">₱0.00</span>
+        </div>
+        <div class="summary-line">
+          <span class="summary-label">
+            Xchange Buyer Protection
+            <span class="badge-free">FREE</span>
+          </span>
+          <span class="summary-value summary-free">₱0.00</span>
+        </div>
+        <div class="summary-line">
+          <span class="summary-label">Escrow Handling & Inspection</span>
+          <span class="summary-value summary-free">₱0.00</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-line total-line">
+          <span class="summary-label">Total to Pay</span>
+          <span class="summary-value total-value" id="cart-total">₱0.00</span>
+        </div>
+      </div>
+
+      <!-- Checkout Action Button -->
+      <button type="button" class="btn btn-primary btn-block btn-checkout" id="checkout-btn">
+        <span>Proceed to Secure Checkout</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+      <p class="checkout-guarantee-note">
+        🔒 Encrypted 256-bit Student Escrow Protection
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==================== VERIFIED SPECS MODAL ==================== -->
+  <div class="modal-overlay specs-modal-overlay" id="specs-modal" role="dialog" aria-modal="true" aria-labelledby="specs-modal-title" aria-hidden="true">
+    <div class="modal-dialog specs-modal-dialog">
+      <button type="button" class="modal-close" id="specs-close-btn" aria-label="Close specifications dialog">&times;</button>
+
+      <div class="specs-modal-body" id="specs-modal-content">
+        <!-- Dynamically injected verified specs content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MOCK CHECKOUT CONFIRMATION MODAL ==================== -->
+  <div class="modal-overlay checkout-modal-overlay" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="order-success-title" aria-hidden="true">
+    <div class="modal-dialog checkout-success-dialog">
+      
+      <!-- Green Checkmark Circle -->
+      <div class="checkout-success-icon-wrap">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+
+      <span class="order-status-pill">Payment Held in Escrow</span>
+      <h2 class="order-success-title" id="order-success-title">Order Successful!</h2>
+
+      <p class="order-success-message">
+        Your payment is safely protected by Xchange Escrow. Waiting for the seller to ship out your product.
+      </p>
+
+      <!-- Order Details Summary Card -->
+      <div class="order-summary-box">
+        <div class="order-detail-row">
+          <span class="detail-label">Order Reference ID:</span>
+          <strong class="detail-ref" id="order-ref-id">#XCH-74920</strong>
+        </div>
+        <div class="order-detail-row">
+          <span class="detail-label">Protection Status:</span>
+          <span class="detail-status-badge">
+            <span class="status-indicator-dot"></span>
+            100% Escrow Safeguarded
+          </span>
+        </div>
+        <div class="order-detail-row">
+          <span class="detail-label">Total Amount Paid:</span>
+          <strong class="detail-amount" id="order-total-amount">₱0.00</strong>
+        </div>
+      </div>
+
+      <!-- Escrow Policy Notice -->
+      <div class="escrow-instruction-note">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <p>
+          Funds will <strong>NOT</strong> be released to the seller until you receive, inspect, and confirm that the item matches its verified specifications.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="order-action-buttons">
+        <button type="button" class="btn btn-primary btn-block btn-lg" id="continue-shopping-btn">
+          Continue Shopping
+        </button>
+        <a href="index.html" class="btn btn-outline btn-block">
+          Return to Landing Page
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div class="toast-container" id="toast-container" aria-live="polite">
+    <!-- Toasts injected via shop.js -->
+  </div>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="shop.js"></script>
+</body>
+</html>
+
+ia-live="polite">
+    <!-- Toasts injected via shop.js -->
+  </div>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="shop.js"></script>
+</body>
+
+</html>

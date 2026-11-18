@@ -150,6 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
       closeRegisterModal();
       regForm.reset();
       resetRoleCards();
+      window.location.href = 'shop.html';
     });
   }
 

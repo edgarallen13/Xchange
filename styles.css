@@ -354,6 +354,15 @@ h6 {
   border-radius: var(--radius-full);
 }
 
+.nav-link.nav-link-highlight {
+  color: var(--color-brand-orange);
+  font-weight: 700;
+}
+
+.nav-link.nav-link-highlight:hover {
+  color: var(--color-brand-orange-hover);
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
